@@ -54,9 +54,10 @@
             android:inputType="text" />
     </LinearLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="635dp"
+        android:orientation="vertical"
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/lnlNavigationBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,177 +65,185 @@
         app:layout_constraintTop_toBottomOf="@+id/lnlSearchBar"
         app:layout_constraintVertical_bias="0.0">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
-                android:id="@+id/lnlThumb"
-                android:layout_width="355dp"
-                android:layout_height="271dp"
-                android:layout_gravity="center"
-                android:background="@drawable/infor_homepage_tem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/homepage" />
+                <LinearLayout
+                    android:id="@+id/lnlThumb"
+                    android:layout_width="355dp"
+                    android:layout_height="271dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/infor_homepage_tem"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/homepage" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_map_pin" />
+
+                            <TextView
+                                style="@style/text_infor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/t_a_b2_i_h_c_kinh_t_lu_t" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_clock" />
+
+                            <TextView
+                                style="@style/text_infor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:text="@string/th_2_th_7_08_00_18_00" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
+                    android:id="@+id/lnlContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="394dp"
+                    android:layout_marginStart="20dp"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_map_pin" />
+                            android:id="@+id/imvBookSale"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_book" />
 
                         <TextView
-                            style="@style/text_infor"
+                            android:id="@+id/txtBookSale"
+                            style="@style/title_book"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/t_a_b2_i_h_c_kinh_t_lu_t" />
+                            android:layout_marginStart="10dp"
+                            android:text="Sách bán"
+                            android:textColor="@color/Button" />
 
                     </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvBookSale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_clock" />
+                            android:id="@+id/imvEBook"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_book" />
 
                         <TextView
-                            style="@style/text_infor"
+                            android:id="@+id/txtEBook"
+                            style="@style/title_book"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="10dp"
-                            android:text="@string/th_2_th_7_08_00_18_00" />
+                            android:layout_marginStart="5dp"
+                            android:text="Ebook"
+                            android:textColor="@color/Button" />
+
                     </LinearLayout>
 
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvEBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imvBookBorrow"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_book" />
+
+                        <TextView
+                            android:id="@+id/txtBookBorrow"
+                            style="@style/title_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Sách mượn" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvBookBorrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/lnlContent"
-                android:layout_width="match_parent"
-                android:layout_height="394dp"
-                android:layout_marginStart="20dp"
-                android:orientation="vertical">
+        </ScrollView>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
+    </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/imvBookSale"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_book" />
-
-                    <TextView
-                        android:id="@+id/txtBookSale"
-                        style="@style/title_book"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="Sách bán"
-                        android:textColor="@color/Button" />
-
-                </LinearLayout>
-
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvBookSale"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imvEBook"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_book" />
-
-                    <TextView
-                        android:id="@+id/txtEBook"
-                        style="@style/title_book"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:text="Ebook"
-                        android:textColor="@color/Button" />
-
-                </LinearLayout>
-
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvEBook"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imvBookBorrow"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_book" />
-
-                    <TextView
-                        android:id="@+id/txtBookBorrow"
-                        style="@style/title_book"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:text="Sách mượn" />
-
-                </LinearLayout>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcvBookBorrow"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </ScrollView>
 
     <LinearLayout
         android:id="@+id/lnlNavigationBar"
@@ -252,7 +261,7 @@
 <!--            android:layout_height="match_parent"-->
 <!--            android:layout_weight="1"-->
 <!--            android:backgroundTint="@color/Text_color_2"-->
-<!--            android:src="@drawable/ic_homepage" />-->
+<!--            android:src="@drawable/ic" />-->
 
 <!--        <ImageButton-->
 <!--            android:id="@+id/btnService"-->
