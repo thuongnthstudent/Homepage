@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    set màu cho backgroud tất cả màn hình-->
+    <style name="Bgr_manhinh">
+        <item name="android:background">@color/Background_Phone</item>
+    </style>
+
+    <!--    kiểu cho button lớn -->
+    <style name="button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Text_color_2</item>
+        <item name="android:backgroundTint">@color/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--    kiểu chữ title cho tất cả các màn hình khi đăng nhập-->
+    <style name="title_Outside">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--    kiểu chữ title cho tất cả các màn hình sau khi đăng nhập thành công-->
+    <style name="title_Inside">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--    set kiểu cho tiêu đề phụ -->
+    <style name="subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Hint</item>
+    </style>
+
+    <!--    kiểu cho tiêu đề 2 ex: trong homepage-->
+    <style name="title2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+    </style>
+
+    <!--    kiểu cho text nội dung-->
+    <style name="text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+    </style>
+
+    <!--    kiểu cho text nội dung in đậm-->
+    <style name="text_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--    kiểu text trong button-->
+    <style name="text_button_cancel">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+    </style>
+
+    <!--    kiểu chủ đề cho sách -->
+    <style name="title_book">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--    kiểu tiều đề cho sách-->
+    <style name="subtitle_book">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+    </style>
+
+    <!--    kiểu text để link tới màn hình khác -->
+    <style name="text_link">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/Text_color_1</item>
+    </style>
+
+    <!--    kiểu text khi nhập trong edittext-->
+    <style name="text_type">
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--    Kiểu text hiển thị thông tin trên homepage-->
+    <style name="text_infor">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Text_color_2</item>
+    </style>
+
+</resources>

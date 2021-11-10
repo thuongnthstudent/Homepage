@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Text_color_1">#1A3152</color>
+    <color name="Button">#17548D</color>
+    <color name="Background">#7B97B9</color>
+    <color name="Hint">#C1C7D0</color>
+    <color name="Background_Phone">#F7FAFD</color>
+    <color name="Text_color_2">#FFFFFF</color>
+</resources>
